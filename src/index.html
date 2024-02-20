@@ -54,13 +54,17 @@
         .value { color: var(--nutmeg); font-weight: 700; width: 50%; box-sizing: border-box; padding-left: 7px;}
         .attribution { font-size: 11px; text-align: center; margin-bottom: 10px; }
         .attribution a { color: hsl(228, 45%, 44%); }
+        
+        @media screen and (max-width: 768px) {
+            section.main { border-radius: 0; padding: 0; width: 100%; margin: 0 auto;}
+            .container { padding-left: 32px; padding-right: 32px; padding-bottom: 32px; width: 100%; box-sizing: border-box; }
+        }
 
         @media screen and (max-width: 375px) {
-            section.main { border-radius: 0; padding: 0; width: 100%; margin: 0 auto;}
-            .container { padding-left: 32px; padding-right: 32px; padding-bottom: 32px; width: 100%; max-width: 311px; }
             h1 { font-size: 36px; line-height: 1; }
             .attribution { margin-top: 20px; }
         }
+
     </style>
 </head>
 <body>
